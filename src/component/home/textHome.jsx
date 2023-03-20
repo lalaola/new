@@ -5,6 +5,7 @@ import skz from '../../asset/image/skz.png'
 import me from '../../asset/image/me.png'
 import { NavLink } from 'react-router-dom';
 import { motion } from "framer-motion"
+import file from '../../asset/cv.pdf'
 
 const TextHome = () => {
     const [nav, setNav] = useState("01");
@@ -66,7 +67,7 @@ const TextHome = () => {
                                 <h3>{data.content}</h3>
                                 <div className="btn-grop mt-3">
                                     <NavLink to='/contact' className=' btn btn-dark'>Hire Me</NavLink>
-                                    <a className='btn btn-light ms-3 '>Download CV</a>
+                                    <a download=""  href={file} className='btn btn-light ms-3 '>Download CV</a>
                                 </div>
                             </motion.div>
                             <motion.div
