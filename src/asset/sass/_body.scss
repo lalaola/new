@@ -1,0 +1,35 @@
+.index {
+    width: 100%;
+    height: auto;
+    min-height: 480px;
+    overflow: hidden;
+
+    &.show .content-wrap {
+        will-change: transform;
+        -ms-transform: translateX(calc(70% - 80px));
+        transform: translateX(calc(70% - 80px));
+        transition-delay: 0s;
+    }
+}
+
+.content-wrap {
+    min-height: 100vh;
+    overflow-y: auto;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 9rem;
+    transition: .4s ease;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .content-wrap {
+        margin-left: 0;
+        margin-top: 2.5rem;
+    }
+}

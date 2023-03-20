@@ -1,0 +1,172 @@
+.title-about{
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: .07em;
+    line-height: 47px;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+    span{
+        color: orange;
+    }
+}
+
+.about {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    h2 {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 47px;
+        letter-spacing: 0.07em;
+        text-align: center;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 57px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #000000;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    .foto {
+        width: 25%;
+    }
+
+    .text {
+        margin-left: 2rem;
+    }
+
+    &__content {
+        width: 100vw;
+
+        .isi-about {
+            min-height: 100vh;
+            z-index: 1;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                color: $yellow;
+            }
+
+            p {
+                font-size: 22px;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+
+        .img-bg {
+            position: relative;
+            height: 100vh;
+            z-index: 0;
+            overflow: hidden;
+
+            .toggle {
+                position: absolute;
+                right: 0;
+                top: 1rem;
+            }
+
+            .foto {
+                height: 100vh;
+
+                .col-12 {
+                    height: 100%;
+                }
+            }
+
+            .spiral {
+                position: absolute;
+                bottom: -1rem;
+            }
+
+            .matahari {
+                position: absolute;
+                right: 0;
+                top: 7rem;
+            }
+
+            .pelangi {
+                position: absolute;
+                left: 0;
+            }
+
+            .abstrak {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .warning {
+        background-color: black;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: red;
+            text-align: center;
+        }
+
+        h3 {
+            color: white;
+        }
+
+    }
+}
+
+
+// mobile 
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+
+        .foto {
+            width: 40%;
+        }
+
+        .text {
+            margin-left: 0;
+            margin-top: 2rem;
+
+        }
+
+        .isi-about {
+
+            p {
+                font-size: 18px;
+            }
+
+            .foto {
+                height: 50vh;
+                margin-top: -2rem;
+            }
+
+            .text {
+                margin-top: -2rem;
+            }
+        }
+    }
+}

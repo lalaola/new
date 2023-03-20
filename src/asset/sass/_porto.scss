@@ -1,0 +1,42 @@
+.porto{
+    li{
+        h1{
+            font-size: 60px;
+        }
+        margin-top: 5rem;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 22px;
+        }
+    }
+    .content-porto{
+        border-bottom: 1px solid black;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .porto {
+        margin-top: 2rem;
+        .content-porto{
+            flex-direction: column-reverse;
+            align-items: center;
+            .col-md-7.col-10 {
+                margin-top: 1rem;
+            }
+            
+            
+        }
+        .flex-porto{
+            flex-direction: column;
+            
+        }
+        li{
+            margin-top: 0;
+            list-style: none;
+        }
+    }
+
+
+}
